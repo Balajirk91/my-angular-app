@@ -1,0 +1,104 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "balaji",
+      "location": "chennai"
+    },
+    {
+      "id": 2,
+      "name": "surya",
+      "location": "bangalore"
+    },
+    {
+      "id": 3,
+      "name": "harish",
+      "location": "delhi"
+    },
+    {
+      "id": 4,
+      "name": "deva",
+      "location": "kolkata"
+    }
+  ],
+  "employeeprofile": [
+    {
+      "ename": "bala",
+      "edept": "bcom",
+      "eshift": "2",
+      "eaddress": "mannady",
+      "ecity": "chennai",
+      "id": 2
+    }
+  ],
+  "studentdetails": [
+    {
+      "stuname": "fdg",
+      "studept": "fgfd",
+      "stushift": "fgfg",
+      "stuaddress": "gg",
+      "stucity": "gfg",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "username": "balaji",
+      "password": "bala",
+      "confirmpassword": "bala",
+      "id": 2
+    },
+    {
+      "username": "surya",
+      "password": "don17-20",
+      "confirmpassword": "don17-20",
+      "id": 3
+    },
+    {
+      "username": "fdg",
+      "password": "dgh",
+      "confirmpassword": "dgh",
+      "id": 4
+    },
+    {
+      "username": "baka",
+      "password": "balaji",
+      "confirmpassword": "balaji",
+      "id": 5
+    },
+    {
+      "username": "fhfh",
+      "password": "bala",
+      "confirmpassword": "bala",
+      "id": 6
+    },
+    {
+      "username": "deva",
+      "password": "devva",
+      "confirmpassword": "devva",
+      "id": 7
+    },
+    {
+      "username": "nandhu",
+      "password": "priya",
+      "confirmpassword": "priya",
+      "id": 8
+    },
+    {
+      "username": "harish",
+      "password": "harish",
+      "confirmpassword": "harish",
+      "id": 9
+    }
+  ],
+  "stud": [
+    {
+      "id": 1,
+      "name": "bala",
+      "course": "bca"
+    }
+  ]
+}

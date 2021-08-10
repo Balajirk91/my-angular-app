@@ -1,0 +1,39 @@
+<mat-toolbar class="formtoolbar">
+    <button mat-icon-button (click)="sidenavopen= !sidenavopen" >
+        <mat-icon >
+            menu
+        </mat-icon>
+    </button>
+    Student Form
+    <div class="logout" (click)="logout()">
+        Logout
+    </div>
+</mat-toolbar>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" (click)="homepage()">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" (click)="stuform()">Student Form</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" (click)="studetails()">Student Details</a>
+      </li>
+    </ul>
+</nav>
+<mat-sidenav-container class="formnav">
+    <mat-sidenav class="formsidenav" [(opened)]="sidenavopen" #sidenav mode="side">
+       <mat-nav-list class="listsidenav">
+           <mat-list-item (click)="homepage()">Home</mat-list-item>
+           <mat-list-item (click)="stuform()">Student Form</mat-list-item>
+           <mat-list-item (click)="studetails()">student Details</mat-list-item>
+       </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="container">
+            <h1>Welcome to A.m.jain college</h1>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

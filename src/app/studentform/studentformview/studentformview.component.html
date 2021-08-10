@@ -1,0 +1,50 @@
+<h1>Student Details</h1>
+<mat-form-field>
+    <input matInput (keyup)="applyfilter($event)" placeholder="search">
+</mat-form-field>
+<div class="mat-elevation-z8">
+<table mat-table [dataSource]="studata">
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let student"> {{student.id}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="stuname">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let student" appNamehighlight> {{student.stuname}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="studept">
+        <th mat-header-cell *matHeaderCellDef> Dept</th>
+        <td mat-cell *matCellDef="let student"> {{student.studept}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="stushift">
+        <th mat-header-cell *matHeaderCellDef>Shift</th>
+        <td mat-cell *matCellDef="let student" [ngClass]="'shiftclass'"> {{student.stushift}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="stuaddress">
+        <th mat-header-cell *matHeaderCellDef>Address</th>
+        <td mat-cell *matCellDef="let student" [ngStyle]="{'color':student.stuaddress === 'mannady' ? 'red' : student.stuaddress === 'kanchipuram' ? 'blue' :'brown'}"> {{student.stuaddress}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="stucity">
+        <th mat-header-cell *matHeaderCellDef>City</th>
+        <td mat-cell *matCellDef="let student" [ngStyle]="{'color':setcolor(student.stucity)}"> {{student.stucity}} </td>
+      </ng-container>
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef>Delete</th>
+        <td mat-cell *matCellDef="let student"><button class="btn btn-danger" (click)="delete(student.id)">Delete</button></td>
+      </ng-container>
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef>Edit</th>
+        <td mat-cell *matCellDef="let student"><button class="btn btn-success" (click)="onclick(student.id)">Edit</button></td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedcolumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedcolumns;"></tr>
+</table>
+<mat-paginator [length]="this.studata.length" [pageSize]="5" [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
+</div>
+<br><br>
+<button class="btn btn-primary" (click)="backtoform()">Back</button>

@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "stuname": "xzcxc",
+      "studept": "cxc",
+      "stushift": "xcxv",
+      "stuaddress": "xvxv",
+      "stucity": "xvxv",
+      "id": 2
+    },
+    {
+      "stuname": "xzcxc",
+      "studept": "cxc",
+      "stushift": "xcxv",
+      "stuaddress": "xvxv",
+      "stucity": "xvxv",
+      "id": 3
+    },
+    {
+      "stuname": "sdsd",
+      "studept": "ffdfd",
+      "stushift": "ssfs",
+      "stuaddress": "sfsfs",
+      "stucity": "ssfsf",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "studentdetails": [
+    {
+      "stuname": "dd",
+      "studept": "bcvb",
+      "stushift": "fddsf",
+      "stuaddress": "gfg",
+      "stucity": "dfgfgf",
+      "id": 1
+    },
+    {
+      "stuname": "dd",
+      "studept": "bcvb",
+      "stushift": "fddsfcvcx",
+      "stuaddress": "gfg",
+      "stucity": "dfgfgf",
+      "id": 2
+    },
+    {
+      "stuname": "dd",
+      "studept": "bcvb",
+      "stushift": "fddsfcvcx",
+      "stuaddress": "gfg",
+      "stucity": "dfgfgf",
+      "id": 3
+    }
+  ]
+}

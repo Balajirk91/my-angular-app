@@ -1,0 +1,16 @@
+.formnav
+{
+    width: 100%;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #555;
+}
+.formsidenav
+{
+    background-color: blueviolet;
+    width:20%;
+}
+.formtoolbar{
+    background-color: blueviolet;
+    color: white;
+}

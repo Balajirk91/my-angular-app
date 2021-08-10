@@ -1,0 +1,21 @@
+h1{
+    font-weight:500
+}
+button{
+    width: 100px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: visible;
+}
+a
+{
+    margin:5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.right {
+    text-align: right;
+    float: right;
+    margin-top:20px;
+}

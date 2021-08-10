@@ -1,0 +1,24 @@
+h1{
+    font-weight:500
+}
+button{
+    width: 100px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: visible;
+}
+.btn-block{
+    width:100%
+}
+a
+{
+    margin-bottom:5px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+form{
+    width:100%;
+    height: 100%;
+}

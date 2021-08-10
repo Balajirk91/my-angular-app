@@ -1,0 +1,43 @@
+<h1>Employee form</h1>
+<form [formGroup]="empform">
+    <div class="form-group">
+        <label> Name:</label>
+        <input type="text" formControlName="ename" ><br>
+        <span *ngIf="!empform.controls['ename'].valid && empform.controls['ename'].touched">name is required</span>
+    </div>
+    Dept:         <input type="text" formControlName="edept"><br><br>
+    Shift:        <input type="text" formControlName="eshift"><br><br>
+    Address:      <input type="text" formControlName="eaddress"><br><br>
+    City:         <input type="text" formControlName="ecity"><br><br>
+    <button class="btn btn-primary" (click)="saveform()">save</button>
+    <button class="btn btn-primary" (click)="clearform()">clear</button>
+    <button class="btn btn-primary" (click)="viewform()">view</button>
+    <button class="btn btn-primary" (click)="updateform()">update</button>
+    </form>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Shift</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of emplist">
+            <td>{{emp.id}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.edept}}</td>
+            <td>{{emp.eshift}}</td>
+            <td>{{emp.eaddress}}</td>
+            <td>{{emp.ecity}}</td>
+            <td><button class="btn btn-success" (click)="editdata(emp.id)">Edit</button></td>
+            <td><button class="btn btn-danger" (click)="deldata(emp.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

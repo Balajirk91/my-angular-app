@@ -1,0 +1,21 @@
+<form [formGroup]="loginser.login" #lform="ngForm">
+    <div class="container">
+          <div class="col-sm-6 offset-sm-3">
+              <div class="form-group">
+                 <h1>Login</h1>
+                 <label>Username:</label><br>      
+                 <input type="text" class="form-control" formControlName="lusername" [class.is-invalid]="lform.submitted && ! loginser.Username.valid"><br>
+                 <div class="invalid-feedback">username is required</div><br>
+              </div>
+              <div class="form-group">
+                 <label>password:</label><br>      
+                 <input type="password" class="form-control" formControlName="lpassword" [class.is-invalid]="lform.submitted && ! loginser.Password.valid"><br>
+                 <div class="invalid-feedback">username is required</div><br>
+              </div>
+              <div *ngIf="lform.submitted" class="alert alert-danger">{{loginser.errormsg}}</div>
+              <a href="" routerLink="/stureg">Register Now</a><br>
+              <button (click)="logincred()" class="btn btn-primary btn-lg btn-block">Log in</button>
+          </div>
+        </div>
+  </form>
+  <router-outlet></router-outlet>
